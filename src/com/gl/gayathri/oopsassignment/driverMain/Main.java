@@ -17,26 +17,29 @@ public class Main {
 		final String welcome ="Welcome to";
 		
 		//Start displaying outputs
+		
 		//AdminDepartment
 		
 		System.out.println(welcome + adminobj.departmentName());
 		System.out.println((adminobj.getTodaysWork()).trim());
 		System.out.println((adminobj.getWorkDeadline()).trim());
-		System.out.println((adminobj.isTodayAHoliday()).trim());
-		System.out.println("");
+		System.out.println((adminobj.isTodayAHoliday()).trim()+"\n");
+		
+		//HrDepartment
 		
 		System.out.println(welcome + hrobj.departmentName());
 		System.out.println((hrobj.doActivity()).trim());
 		System.out.println((hrobj.getTodaysWork()).trim());
 		System.out.println((hrobj.getWorkDeadline()).trim());
-		System.out.println((hrobj.isTodayAHoliday()).trim());
-		System.out.println("\n");
+		System.out.println((hrobj.isTodayAHoliday()).trim()+"\n"+"\n");
+		
+		//TechDepartment
 		
 		System.out.println(welcome + techobj.departmentName());
 		System.out.println((techobj.getTodaysWork()).trim());
 		System.out.println((techobj.getWorkDeadline()).trim());
 		System.out.println((techobj.getTechStackInformation()).trim());
-		System.out.println((techobj.isTodayAHoliday()+ "\n").trim());
+		System.out.println((techobj.isTodayAHoliday()).trim()+"\n");
 	}
 
 }
